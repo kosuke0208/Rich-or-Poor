@@ -1,0 +1,496 @@
+.ribbon9 {
+    top: 50px;
+    display: inline-block;
+    position: absolute;
+    height: 90px;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 490px;
+  }
+  
+  .ribbon9:before {/*左側のリボン端*/
+    content: '';
+    position: absolute;
+    width: 10px;
+    bottom: -10px;
+    left: -35px;
+    z-index: -2;
+    border: 30px solid #56adf3;
+    border-left-color: transparent;/*山形に切り抜き*/
+  }
+  
+  .ribbon9:after {/*右側のリボン端*/
+    content: '';
+    position: absolute;
+    width: 10px;
+    bottom: -10px;
+    right: -35px;
+    z-index: -2;
+    border: 30px solid #56adf3;
+    border-right-color: transparent;/*山形に切り抜き*/
+  }
+  
+  .ribbon9 h3 {
+    display: inline-block;position: relative;
+    margin: 0;
+    padding: 0 20px;
+    line-height: 90px;
+    font-size: 50px;
+    color: #FFF;
+    background: #2196F3;/*真ん中の背景色*/
+  }
+  .ribbon9 h3:before {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 0;
+    border: none;
+    border-bottom: solid 10px transparent;
+    border-right: solid 15px #397eb5;/*左の折り返し部分*/
+  }
+  .ribbon9 h3:after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    right: 0;
+    border: none;border-bottom: solid 10px transparent;
+    border-left: solid 15px #397eb5;/*右の折り返し部分*/
+  }
+  .yusei-magic-regular {
+    font-family: "Yusei Magic", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .ranking{
+    width: 100vw;
+    white-space: nowrap;
+    margin: 200px auto 40px;
+  }
+
+  .ranking .text{
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+      font-style: normal;
+      margin: 15px 0;
+  }
+  h1,h2{
+    margin: 0 30px;
+    font-weight: 200;
+  }
+  .ranking .text h1{
+    width: 40vw;
+    min-width: 40vw;
+    font-size: 3rem;
+    text-align:right;
+    padding-right: 25px;
+  }
+  .ranking .text h2{
+    width: 60vw;
+    font-size: 2.8rem;
+  }
+  
+  
+  .text2{
+      position: absolute;
+      text-align: center;
+      top: 250px;
+      left: 250px;
+      font-weight: 600;
+      font-size: 1.6em;
+      font-style: normal;
+  }
+  
+  .text3{
+      position: absolute;
+      text-align: center;
+      bottom: 210px;
+      left: 250px;
+      font-weight: 600;
+      font-size: 1.6em;
+      font-style: normal;
+  }
+  
+  .text4{
+      position: absolute;
+      text-align: center;
+      bottom: 110px;
+      left: 250px;
+      font-weight: 600;
+      font-size: 1.6em;
+      font-style: normal;
+  }
+  .background {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('back.png'); 
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position:relative;
+  }
+  body{
+    margin: 0;
+  }
+  .btn-square {
+    display: block;
+    padding: 1em 2em;
+    text-decoration: none;
+    background: #668ad8;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+    width: 250px;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  .btn-square:active {
+    /*ボタンを押したとき*/
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+  }
+  
+  .confetti {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+  }
+  
+  .confetti span {
+      position: absolute;
+      top: -10%;
+      left: 0;
+      width: 1.5vw;
+      height: 1vw;
+      background: #FFF;
+  }
+  
+  /* add animation */
+  .confetti span:nth-child(2n+1) {
+      animation: confetti-anim-1 10s 0s linear infinite;
+  }
+  
+  .confetti span:nth-child(2n+2) {
+      animation: confetti-anim-2 10s 0s linear infinite;
+  }
+  
+  /* side position */
+  .confetti span:nth-child(1) {
+      left: 0%;
+  }
+  
+  .confetti span:nth-child(2) {
+      left: 2%;
+  }
+  
+  .confetti span:nth-child(3) {
+      left: 4%;
+  }
+  
+  .confetti span:nth-child(4) {
+      left: 6%;
+  }
+  
+  .confetti span:nth-child(5) {
+      left: 8%;
+  }
+  
+  .confetti span:nth-child(6) {
+      left: 10%;
+  }
+  
+  .confetti span:nth-child(7) {
+      left: 12%;
+  }
+  
+  .confetti span:nth-child(8) {
+      left: 14%;
+  }
+  
+  .confetti span:nth-child(9) {
+      left: 16%;
+  }
+  
+  .confetti span:nth-child(10) {
+      left: 18%;
+  }
+  
+  .confetti span:nth-child(11) {
+      left: 20%;
+  }
+  
+  .confetti span:nth-child(12) {
+      left: 22%;
+  }
+  
+  .confetti span:nth-child(13) {
+      left: 24%;
+  }
+  
+  .confetti span:nth-child(14) {
+      left: 26%;
+  }
+  
+  .confetti span:nth-child(15) {
+      left: 28%;
+  }
+  
+  .confetti span:nth-child(16) {
+      left: 30%;
+  }
+  
+  .confetti span:nth-child(17) {
+      left: 32%;
+  }
+  
+  .confetti span:nth-child(18) {
+      left: 34%;
+  }
+  
+  .confetti span:nth-child(19) {
+      left: 36%;
+  }
+  
+  .confetti span:nth-child(20) {
+      left: 38%;
+  }
+  
+  .confetti span:nth-child(21) {
+      left: 40%;
+  }
+  
+  .confetti span:nth-child(22) {
+      left: 42%;
+  }
+  
+  .confetti span:nth-child(23) {
+      left: 44%;
+  }
+  
+  .confetti span:nth-child(24) {
+      left: 46%;
+  }
+  
+  .confetti span:nth-child(25) {
+      left: 48%;
+  }
+  
+  .confetti span:nth-child(26) {
+      left: 50%;
+  }
+  
+  .confetti span:nth-child(27) {
+      left: 52%;
+  }
+  
+  .confetti span:nth-child(28) {
+      left: 54%;
+  }
+  
+  .confetti span:nth-child(29) {
+      left: 56%;
+  }
+  
+  .confetti span:nth-child(30) {
+      left: 58%;
+  }
+  
+  .confetti span:nth-child(31) {
+      left: 60%;
+  }
+  
+  .confetti span:nth-child(32) {
+      left: 62%;
+  }
+  
+  .confetti span:nth-child(33) {
+      left: 64%;
+  }
+  
+  .confetti span:nth-child(34) {
+      left: 66%;
+  }
+  
+  .confetti span:nth-child(35) {
+      left: 68%;
+  }
+  
+  .confetti span:nth-child(36) {
+      left: 70%;
+  }
+  
+  .confetti span:nth-child(37) {
+      left: 72%;
+  }
+  
+  .confetti span:nth-child(38) {
+      left: 74%;
+  }
+  
+  .confetti span:nth-child(39) {
+      left: 76%;
+  }
+  
+  .confetti span:nth-child(40) {
+      left: 78%;
+  }
+  
+  .confetti span:nth-child(41) {
+      left: 80%;
+  }
+  
+  .confetti span:nth-child(42) {
+      left: 82%;
+  }
+  
+  .confetti span:nth-child(43) {
+      left: 84%;
+  }
+  
+  .confetti span:nth-child(44) {
+      left: 86%;
+  }
+  
+  .confetti span:nth-child(45) {
+      left: 88%;
+  }
+  
+  .confetti span:nth-child(46) {
+      left: 90%;
+  }
+  
+  .confetti span:nth-child(47) {
+      left: 92%;
+  }
+  
+  .confetti span:nth-child(48) {
+      left: 94%;
+  }
+  
+  .confetti span:nth-child(49) {
+      left: 96%;
+  }
+  
+  .confetti span:nth-child(50) {
+      left: 98%;
+  }
+  
+  /* colors */
+  .confetti span:nth-child(5n+1) {
+      background: #cdf;
+  }
+  
+  .confetti span:nth-child(5n+2) {
+      background: #abf;
+  }
+  
+  .confetti span:nth-child(5n+3) {
+      background: #ffa;
+  }
+  
+  .confetti span:nth-child(5n+4) {
+      background: #aaf ;
+  }
+  
+  .confetti span:nth-child(5n+5) {
+      background: #fab;
+  }
+  
+  
+  /* animation-duration */
+  .confetti span:nth-child(4n+1) {
+      animation-duration: 5s;
+  }
+  
+  .confetti span:nth-child(4n+2) {
+      animation-duration: 12s;
+  }
+  
+  .confetti span:nth-child(4n+3) {
+      animation-duration: 8s;
+  }
+  
+  .confetti span:nth-child(4n+4) {
+      animation-duration: 6s;
+  }
+  
+  
+  /* animation-delay */
+  .confetti span:nth-child(11n+1) {
+      animation-delay: 0s;
+  }
+  
+  .confetti span:nth-child(11n+2) {
+      animation-delay: 9s;
+  }
+  
+  .confetti span:nth-child(11n+3) {
+      animation-delay: 2s;
+  }
+  
+  .confetti span:nth-child(11n+4) {
+      animation-delay: 5s;
+  }
+  
+  .confetti span:nth-child(11n+5) {
+      animation-delay: 6s;
+  }
+  
+  .confetti span:nth-child(11n+6) {
+      animation-delay: 7s;
+  }
+  
+  .confetti span:nth-child(11n+7) {
+      animation-delay: 3s;
+  }
+  
+  .confetti span:nth-child(11n+8) {
+      animation-delay: 1s;
+  }
+  
+  .confetti span:nth-child(11n+9) {
+      animation-delay: 2s;
+  }
+  
+  .confetti span:nth-child(11n+10) {
+      animation-delay: 11s;
+  }
+  
+  .confetti span:nth-child(11n+11) {
+      animation-delay: 10s;
+  }
+  
+  /* animation */
+  
+  @keyframes confetti-anim-1 {
+      0% {
+          top: -10%;
+          transform: translateX(0) rotateX(0) rotateY(0);
+      }
+  
+      100% {
+          top: 100%;
+          transform: translateX(20vw) rotateX(180deg) rotateY(360deg);
+      }
+  }
+  
+  @keyframes confetti-anim-2 {
+      0% {
+          top: -10%;
+          transform: translateX(0) rotateX(0) rotateY(0);
+      }
+  
+      100% {
+          top: 100%;
+          transform: translateX(-20vw) rotateX(180deg) rotateY(360deg);
+      }
+  }

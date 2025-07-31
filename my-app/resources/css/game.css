@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+  }
+
+.board{
+    background-color: #109972;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+} 
+.player1 {
+  position: absolute;
+  justify-content: center;
+  bottom: 5px;
+  
+  left: 300px;
+  display: flex;
+}
+.player1 div:not(:last-child) {
+  /* :not(:last-child) に適用することで、基本的にすべて縮めて、最後の1枚だけ幅を保持する */
+  min-width: 0;
+  /* 最小の重なり幅。枚数が少ないときでもこの幅は重ねる */
+  margin-right: -3rem;
+}
+.tefuda img{
+  bottom: 5px;
+  width: 100px; 
+}
+
+.player2 {
+ position: absolute;
+ justify-content: center;
+ bottom: 300px;
+ left: 20px;
+ display: flex;
+}
+
+.player2 div:not(:last-child) {
+  min-width: 0;
+  margin-right: -5.4rem;
+}
+
+.player3 {
+  position: absolute;
+  justify-content: center;
+  bottom: 580px;
+  left: 450px;
+  display: flex;
+}
+.player3 div:not(:last-child) {
+  min-width: 0;
+  margin-right: -5.4rem;
+}
+
+.player4 {
+  position: absolute;
+  justify-content: center;
+  bottom: 300px;
+  left: 1010px;
+  display: flex;
+}
+.player4 div:not(:last-child) {
+  min-width: 0;
+  margin-right: -5.4rem;
+}
+div.action{
+  position: absolute;
+  bottom: 160px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 300px;
+
+}
+.btn {/* 出すボタン */
+  /* position: absolute; */
+  display: inline-block;
+  padding: 0.8em 3em;
+  background-color: #e3364a; 
+  box-shadow: 0 5px 0 #ca1c30; 
+  border-radius: 60px;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none; 
+  margin-bottom: 5px; 
+  margin-left: 0px; 
+}
+
+.btn:hover {
+  box-shadow: none;
+  transform: translateY(5px);
+}
+.btn:active {
+  box-shadow: none;
+  transform: translateY(5px);
+}
+
+.btn2 { /*パスボタン*/
+  /* position: absolute; */
+  display: inline-block;
+  padding: 0.8em 3em;
+  background-color: #61b0e2;
+  box-shadow: 0 5px 0 #369ada;
+  border-radius: 60px;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  margin-bottom: 5px;
+  margin-left: 0px;
+}
+.btn2:hover {
+  box-shadow: none;
+  transform: translateY(5px);
+}
+.btn2:active {
+  box-shadow: none;
+  transform: translateY(5px);
+}
+.box1 { 
+   position: absolute;
+   right: 450px;
+   bottom: 10px;
+   padding: 0.5em 0.5em; 
+   margin: 1.3em 35em; 
+   font-weight: bold; 
+   color: #6091d3; 
+   background: #FFF; 
+   border: solid 3px #6091d3;
+  border-radius: 10px; 
+  width: 220px;
+  right: 460px;
+ } 
+ .box1 p { 
+   margin: 0;  
+   padding: 0; 
+ } 
+.box2 {
+  position: absolute;
+  bottom: 410px;
+  padding: 0.5em 0.5em;
+  margin: 1.3em 35em;
+  font-weight: bold;
+  color: #6091d3;/*文字色*/
+  background: #FFF;
+  border: solid 3px #6091d3;/*線*/
+  border-radius: 10px;/*角の丸み*/
+  width: 220px;
+  right: 470px;
+}
+.box2 p {
+margin: 0;
+padding: 0;
+}
+.box3 {
+  position: absolute;
+  bottom: 610px;
+  padding: 0.5em 0.5em;
+  margin: 1.3em 35em;
+  font-weight: bold;
+  color: #6091d3;
+  background: #FFF;
+  border: solid 3px #6091d3;
+  border-radius: 10px;
+  width: 220px;
+  left: 135px;
+ } 
+.box3 p {
+  margin: 0;
+  padding: 0;
+}
+.box4 {
+  position: absolute;
+  bottom: 410px;
+  padding: 0.5em 0.5em;
+  margin: 1.3em 35em;
+  font-weight: bold;
+  color: #6091d3;/*文字色*/
+  background: #FFF;
+  border: solid 3px #6091d3;/*線*/
+  border-radius: 10px;/*角の丸み*/
+  width: 220px;
+  left: 460px;
+}
+.box4 p {
+margin: 0;
+padding: 0;
+}
